@@ -37,6 +37,7 @@ tags = ['work', 'email']
 for tag in tags:
     process.append(f'+{tag}')
 process.append(f"project:{project}")
+process.append(f"messageid:{msg.headers['Message-ID']}")
 process.append(title)
 # Actually run the command
 subprocess.run(process)
