@@ -1,0 +1,98 @@
+[[package]]
+name = "html2text"
+version = "2020.1.16"
+description = "Turn HTML into equivalent Markdown-structured text."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "kitchen"
+version = "1.2.6"
+description = "Kitchen contains a cornucopia of useful code"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "notmuch"
+version = "0.29.2"
+description = "Python binding of the notmuch mail search and indexing library."
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.1"
+description = "Extensions to the standard Python datetime module"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
+name = "pytz"
+version = "2021.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "taskw"
+version = "1.3.0"
+description = "Python bindings for your taskwarrior database"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+kitchen = "*"
+python-dateutil = "*"
+pytz = "*"
+six = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "ba15b59329cf1fd2111c6a5e2ed2ca3707c100998b6fc96610953271a868ad7b"
+
+[metadata.files]
+html2text = [
+    {file = "html2text-2020.1.16-py3-none-any.whl", hash = "sha256:c7c629882da0cf377d66f073329ccf34a12ed2adf0169b9285ae4e63ef54c82b"},
+    {file = "html2text-2020.1.16.tar.gz", hash = "sha256:e296318e16b059ddb97f7a8a1d6a5c1d7af4544049a01e261731d2d5cc277bbb"},
+]
+kitchen = [
+    {file = "kitchen-1.2.6.tar.gz", hash = "sha256:b84cf582f1bd1556b60ebc7370b9d331eb9247b6b070ce89dfe959cba2c0b03c"},
+]
+notmuch = [
+    {file = "notmuch-0.29.2-py3-none-any.whl", hash = "sha256:0f73e0802abaca646569e671b81e2600747c056184c7f6312a584d6d77a870d0"},
+    {file = "notmuch-0.29.2.tar.gz", hash = "sha256:e32d04340780110a9c50f5cf7e0eed81b47a3785971d02dd6d99acb3f6286ad5"},
+]
+python-dateutil = [
+    {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
+    {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
+]
+pytz = [
+    {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
+    {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+taskw = [
+    {file = "taskw-1.3.0-py3-none-any.whl", hash = "sha256:8467ee1e43035678a6a14ea6d71c6b1e0a19f6feeca7cacc604c246456bcc905"},
+    {file = "taskw-1.3.0.tar.gz", hash = "sha256:7673d80b3d5bace5b35eb71f5035e313a92daab6e437694128d8ce7dcdaf66fb"},
+]
