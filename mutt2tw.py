@@ -37,7 +37,14 @@ tags = ["work", "email"]
 for tag in tags:
     process.append(f"+{tag}")
 process.append(f"project:{project}")
-process.append(f"messageid:{msg.headers['Message-ID']}")
+# Since sometimes the header is Message-ID and other times it is Message-Id
+# this stupid for loop figures out which one it is and sets that as the key
+# there must be a more condensed pythonic way to accomplish this though
+for key in msg.headers:
+    if "message-id" == key.lower():
+        message_id = key
+        break
+process.append(f"messageid:{msg.headers[message_id]}")
 process.append("--")
 process.append(title)
 # Actually run the command
